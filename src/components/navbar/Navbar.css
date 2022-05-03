@@ -1,0 +1,101 @@
+nav{
+    background-color: var(--bacground-color);
+    height: 70px;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container .links-log{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container .logo{
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+nav .container .logo a{
+    color: #fff;
+}
+nav .container .log{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+@media (max-width: 992px) {
+    nav .container .log{
+        display: none;
+    }
+}
+nav .container .log .log-in,
+nav .container .log .sing-in{
+    margin: 0 20px;
+    color: #fff;
+    font-size: 20px;
+}
+nav .container .log .log-in i,
+nav .container .log .sing-in i{
+    margin-right: 10px;
+}
+nav .container .links-log .search,
+nav .container .links-log .menu{
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+}
+nav .container .links-log .menu{
+    font-size: 30px;
+    
+}
+nav .container .black-links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    transition: 1s;
+    transform: translateX(-110vw);
+}
+nav .container .black-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav .container .black-links ul li{
+    padding: 10px 0;
+}
+nav .container .black-links ul a{
+    transition: .5s;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav .container .black-links ul a:hover{
+    color: black;
+}
+nav .container .black-links .close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+}
+nav .container .black-links .close:hover{
+    transform: rotate(360deg);
+}

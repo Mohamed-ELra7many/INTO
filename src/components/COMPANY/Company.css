@@ -1,0 +1,45 @@
+
+.Company .container .cards .card:hover{
+    box-shadow: 0px 0px 7px 0px rgb(214 214 214);
+    transform: scale(1.1);
+}
+@media (max-width: 767px) {
+    .Company .container .cards .card{
+        width: 100%;
+    }
+}
+@media (min-width:768px) {
+    .Company .container .cards .card{
+        width: 45%;
+    }
+}
+@media (min-width:992px) {
+    .Company .container .cards .card{
+        width: 31%;
+    }
+}
+
+.Company .container .cards .card .info-text h3{
+    margin-bottom: 7px;
+}
+.Company .container .cards .card .info-text p{
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: .5px;
+    font-weight: 300;
+    color: #777;
+    margin-bottom: 10px;
+}
+.Company .container .cards .card button{
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--bacground-color);
+    color: var(--bacground-color);
+}
+.Company .container .cards .card button:hover{
+    background-color: var(--bacground-color);
+    color: #fff;
+}

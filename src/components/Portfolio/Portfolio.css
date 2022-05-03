@@ -1,0 +1,23 @@
+
+.port .imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.port .imgs img{
+    margin: 10px;
+    height: 300px;
+    width: 40%;
+}
+.port .imgs .big{
+    width: 60%;
+}
+@media (max-width: 787px) {
+    .port .imgs{
+        flex-direction: column;
+    }
+    .port .imgs img{
+        width: 100% !important;
+    }
+}

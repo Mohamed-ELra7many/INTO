@@ -1,0 +1,59 @@
+.contact .form-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact .form-img form{
+    flex: 1;
+    padding: 15px 0;
+}
+.contact .form-img form .labels label{
+    display: flex;
+    flex-direction: column;
+    color: #797879;
+    margin-bottom: 25px;
+}
+.contact .form-img form .labels label input{
+    outline: 0;
+    border: 1px solid #c1c1c2;
+    width: 90%;
+    height: 45px;
+    padding: 0 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.contact .form-img form .labels label input.message{
+    height: 175px;
+    padding: 5px;
+}
+.contact .form-img form button{
+    color: #fff;
+    background-color: var(--color);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact .form-img form button:hover{
+    background-color: black;
+    transform: scale(1.2);
+}
+.contact .form-img .contact-img{
+    flex: 1;
+}
+.contact .form-img .contact-img img{
+    width: 90%;
+}
+@media (max-width:787px) {
+    .contact .form-img{
+        flex-direction: column;
+    }
+    .contact .form-img form{
+        width: 100%;
+    }
+}
